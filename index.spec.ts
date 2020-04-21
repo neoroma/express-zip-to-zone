@@ -1,4 +1,4 @@
-const { validateZip, zoneByZip } = require('./index')
+import { validateZip, zoneByZip } from './index'
 
 describe('.validateZip', () => {
   it('should validate zip codes', () => {
