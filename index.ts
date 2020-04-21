@@ -245,7 +245,7 @@ const { zones } = {
   },
 }
 
-const getAllZips: (any) => number[] = compose(flatten, concat([]), values)
+const getAllZips: (arg0: any) => number[] = compose(flatten, concat([]), values)
 
 const allZone: number[] = getAllZips(zones)
 
