@@ -36,4 +36,22 @@ describe('.zoneByZip', () => {
     expect(zoneByZip(13626)).toBe('2')
     expect(zoneByZip(13628)).toBe('2')
   })
+  it('should return 3', () => {
+    expect(zoneByZip(74114)).toBe('3')
+    expect(zoneByZip(74115)).toBe('3')
+    expect(zoneByZip(74116)).toBe('3')
+    expect(zoneByZip(74120)).toBe('3')
+  })
+  it('should return 4', () => {
+    expect(zoneByZip(75303)).toBe('4')
+    expect(zoneByZip(75304)).toBe('4')
+    expect(zoneByZip(75305)).toBe('4')
+    expect(zoneByZip(75306)).toBe('4')
+  })
+  it('should return 5', () => {
+    expect(zoneByZip(76405)).toBe('5')
+    expect(zoneByZip(76406)).toBe('5')
+    expect(zoneByZip(76505)).toBe('5')
+    expect(zoneByZip(76506)).toBe('5')
+  })
 })
