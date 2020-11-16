@@ -1,0 +1,6 @@
+dist
+app
+archive
+logs
+node_modules
+gulpfile.js
