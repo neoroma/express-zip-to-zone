@@ -6,6 +6,9 @@ describe('.validateZip', () => {
     expect(validateZip(10129)).toBeTruthy()
     expect(validateZip(10143)).toBeTruthy()
     expect(validateZip(10144)).toBeTruthy()
+    expect(validateZip(74115)).toBeTruthy()
+    expect(validateZip(74208)).toBeTruthy()
+    expect(validateZip(75512)).toBeTruthy()
   })
   it('should not validate zip codes', () => {
     expect(validateZip(20118)).toBeFalsy()
