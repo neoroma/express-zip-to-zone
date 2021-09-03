@@ -1,4 +1,12 @@
-import { validateZip, zoneByZip } from './index'
+import { readFileSync } from 'fs'
+import { validateZip as validate, zoneByZip as getZone, ZoneMap } from './index'
+
+const zonesContentJson = readFileSync('./zones.example.json', 'utf8')
+const zones = JSON.parse(zonesContentJson.toString())
+const { zones: srcZones }: { zones: ZoneMap } = zones
+
+const validateZip = validate(srcZones)
+const zoneByZip = getZone(srcZones)
 
 describe('.validateZip', () => {
   it('should validate zip codes', () => {
