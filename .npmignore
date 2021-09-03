@@ -1,5 +1,7 @@
-.ts
+*.ts
 .prettierrc
 .git
 .github
-index.spec.ts
+.idea
+.prettierignore
+babel.config.js
